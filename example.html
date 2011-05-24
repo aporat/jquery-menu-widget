@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Calendrical Test</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script src="jquery.menuwidget.js"></script>
+        <link rel="stylesheet" href="menuwidget.css" />
+        <style>
+            body {
+                font: 12px "Lucida Grande", Arial, sans-serif;
+                text-align: center;
+            }
+            pre {
+                font: 11px Menlo, Consolas, Monaco, "DejaVu Sans Mono", Courier, "Courier New";
+            }
+            #wrapper {
+                width: 960px;
+                text-align: left;
+                margin: 0 auto;
+            }
+            section {
+                display: inline-block;
+                margin-bottom: 15px;
+            }
+            div.demo input {
+                width: 100px;
+            }
+            div.demo strong {
+                width: 40px;
+                display: inline-block;
+            }
+            div.demo, div.html, div.javascript {
+                float: left;
+                width: 300px;
+                margin-right: 30px;
+                text-align: left;
+            }
+            div.javascript {
+                margin-right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <h1>Menu Widget</h1>
+            </header>
+            
+            <section>
+                <header>
+                    <h2>Standard Usage</h2>
+                </header>
+                
+                <div class="demo">
+                    <p>
+    <div class="menu-widget" id="action-menu">
+	    <ul>
+	    	<li>
+				<a class="menu-widget-head" href="#">Menu Action</a>
+				<ul>
+					 <li><a id="invite-resident-link" href="#">New Action</a></li>
+					 <li><a id="export-residents-link" href="#">New Action 2</a></li>
+				</ul>
+			</li>  
+		</ul>
+	</div>
+                    </p>
+                    <script>
+                        $(function() {
+                            $('#action-menu').menuWidget(); 
+                        });
+                    </script>
+                </div>
+                
+                <div class="html">
+                </div>
+                
+                <div class="javascript">
+                    <pre>
+$(<font color="#008000">'#action-menu'</font>).menuWidget()<font color="4444FF">;</font> 
+					</pre>
+                </div>
+            </section>
+            
+        </div>
+    </body>
+</html>

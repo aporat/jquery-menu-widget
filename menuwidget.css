@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+
+/* menu widget */
+.menu-widget ul { padding: 0px; margin: 0px; border: 1px #C4C4C4;  }
+.menu-widget a { text-decoration: none; color: Black }
+.menu-widget a:hover { text-decoration: none; }
+.menu-widget-head { text-align: left; display: block; width: 170px; background-color: White; padding: 5px 5px 5px 5px; height: 15px; border: 1px solid #C4C4C4; }
+.menu-widget-head-text { text-align: left; padding-left: 35px;  }
+.menu-widget ul li { height: 24px;  display:block; list-style: none; position: relative; text-align: left; }
+.menu-widget ul li ul { position: absolute; z-index: 999999; display: none; }
+.menu-widget ul li ul li { background-color: white; margin: 0px; float: none; border-width: 0px 1px 1px 1px; text-align: left; font-size: 13px; border-color: #C4C4C4; border-style: solid; height: 25px; word-wrap:break-word; }
+.menu-widget ul li ul li a { height: 15px; display: block; color: Black; padding: 5px }
